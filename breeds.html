@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Shop</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <img src="cat.png!sw800" alt="Paw Shop Logo" width="120" height="120">
+        <h1>Welcome to Paw Shop</h1>
+        <h3>Where every pet is Family!</h3>
+        <h4>Furry friends &#128062; Happy homes.</h4>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="breeds.html">Breeds</a>
+            <a href="products.html">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section id="home" class="content">
+            <div class="row">
+                <!-- 10 images with Buy Now buttons -->
+                <div>
+                    <img src="img1.png" alt="Pet 1">
+                    <p>This is blue eyed cat.</p>
+                    <button onclick="buyNow('Pet 1', 12000)">Buy Now</button>
+                </div>
+                <div>
+                    <img src="img 2.webp" alt="Pet 2">
+                    <p>This is black and white cat.</p>
+                    <button onclick="buyNow('Pet 2', 15000)">Buy Now</button>
+                </div>
+                <div>
+                    <img src="img3.webp" alt="Pet 3">
+                    <p>This cat contains more hair.</p>
+                    <button onclick="buyNow('Pet 3', 18000)">Buy Now</button>
+                </div>
+                <div>
+                    <img src="img4.avif" alt="Pet 4" >
+                    <p>This cat lives only in wet place.</p>
+                    <button  onclick="buyNow('Pet 4', 15000)">Buy Now</button>
+                </div>
+                <div>
+                    <img src="img5.webp" alt="Pet 5">
+                    <p>This is a black cat.</p>
+                    <button onclick="buyNow('Pet 5', 10000)">Buy Now</button>
+                </div>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <h3>Details</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="breeds.html">Breeds</a></li>
+                <li><a href="Products.html">Food</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
+    </main>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="dhanyakannan276@gmail.com">dhanyakannan276@gmail.com</a></p>
+        <p>Phone: +9112234556-PAW-SHOP</p>
+        <p>Address: 123 Pet Lane, Animal City, PC 45678</p>
+        <p>Follow us on social media:
+            <a href="https://www.instagram.com/__.mz_dhanzz._/">Instagram</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Paw Shop. All rights reserved. Made with love &hearts;</p>
+    </footer>
+
+
+
+
+    <!-- script -->
+     <script>
+    function buyNow(petName, price) {
+        alert(`Thank you for choosing ${petName}!\n\nPrice: ₹${price}\nYour order has been placed successfully!`);
+    }
+</script>
+</body>
+
+</html>
