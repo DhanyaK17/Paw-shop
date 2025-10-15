@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paw Shop</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<style>
+    button{
+    background-color: #ff69b4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 230px;
+}
+</style>
+<body>
+    <header>
+        <img src="cat.png!sw800" alt="Paw Shop Logo" width="120" height="120">
+        <h1>Welcome to Paw Shop</h1>
+        <h3>Where every pet is Family!</h3>
+        <h4>Furry friends &#128062; Happy homes.</h4>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="breeds.html">Breeds</a>
+            <a href="products.html">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main class="container">
+        <section id="home" class="content">
+            <div id="demo" class="carousel slide" data-ride="carousel">
+
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="food1.webp" alt="cat food" width="100" height="100">
+                        <p>Good for hair growth. <button onclick="buyNow('food1', 8000)">Buy Now</button></p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="food2.webp" alt="cat food" width="100" height="100">
+                        <p>Good for health.    <button onclick="buyNow('food2', 5000)">Buy Now</button></p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="food3.webp" alt="cat food" width="100" height="100">
+                        <p>Good for eye shight <button onclick="buyNow('food3', 8500)">Buy Now</button></p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="food4.webp" alt="cat food" width="100" height="100">
+                        <p>Good for sleep <button onclick="buyNow('food4', 7000)">Buy Now</button></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="sidebar">
+            <h3>Details</h3>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="breeds.html">Breeds</a></li>
+                <li><a href="Products.html">Food</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </aside>
+    </main>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: <a href="dhanyakannan276@gmail.com">dhanyakannan276@gmail.com</a></p>
+        <p>Phone: +9112234556-PAW-SHOP</p>
+        <p>Address: 123 Pet Lane, Animal City, PC 45678</p>
+        <p>Follow us on social media:
+            <a href="https://www.instagram.com/__.mz_dhanzz._/">Instagram</a>
+    </section>
+
+
+    <footer>
+        <p>&copy; 2025 Paw Shop. All rights reserved. Made with love &hearts;</p>
+    </footer>
+
+    <script>
+    function buyNow(foodName, price) {
+        alert(`Thank you for choosing ${foodName}!\n\nPrice: ₹${price}\nYour order has been placed successfully!`);
+    }
+</script>
+
+</body>
+</html>
